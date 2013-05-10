@@ -1,0 +1,2 @@
+RDIO_CONSUMER_KEY = '96ns79wuzjuca9xbueacje5s'
+RDIO_CONSUMER_SECRET = 'WezEpnbHwz'
