@@ -2,6 +2,12 @@
 
 Lists the albums in your [Rdio](http://rdio.com) collection which are no longer available for streaming, for [any of a variety of reasons](http://help.rdio.com/customer/portal/articles/58995).
 
+## Cloning
+
+    git clone https://github.com/cdzombak/rdio-availability.git
+    cd rdio-availability
+    git submodule update --init
+
 ## Usage
 
 `python rdio-availability.py`
