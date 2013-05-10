@@ -12,7 +12,7 @@ Lists the albums in your [Rdio](http://rdio.com) collection which are no longer 
 
 `python rdio-availability.py`
 
-The script will prompt you to visit a web oage to complete OAuth authorization with Rdio. This authorization is only used once when you run the script; if you run the script again you'll be re-prompted to authorize.
+The script will prompt you to visit a web page to complete OAuth authorization with Rdio. This authorization is only used once when you run the script; if you run the script again you'll be re-prompted to authorize.
 
 ## Requirements
 
