@@ -19,7 +19,9 @@ def main():
 
     print('\n' + str(len(unstreamableAlbums)) + ' (' + str(percentUnstreamable) + '%) of the ' + str(len(collectionAlbums)) + ' albums in your Rdio collection are no longer playable.\n')
 
-    for a in unstreamableAlbums:
+    sortedUnstreamableAlbums = sorted(unstreamableAlbums, key=lambda album: album['artist'])
+
+    for a in sortedUnstreamableAlbums:
         print(a['artist'] + ' - ' + a['name'])
 
 if __name__ == '__main__':
