@@ -22,8 +22,8 @@ def main():
 
     sortedUnstreamableAlbums = sorted(unstreamableAlbums, key=lambda album: album['artist'])
 
-    for a in sortedUnstreamableAlbums:
-        print(a['artist'] + ' - ' + a['name'])
+    for album in sortedUnstreamableAlbums:
+        print(album['artist'] + ' - ' + album['name'] + ' - ' + album['shortUrl'])
 
 if __name__ == '__main__':
     main()
