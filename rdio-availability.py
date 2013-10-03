@@ -1,4 +1,5 @@
 import sys
+import webbrowser
 from rdio import Rdio
 from rdio_consumer_credentials import *
 
@@ -7,6 +8,7 @@ def main():
 
     url = rdio.begin_authentication('oob')
     print('Visit: ' + url)
+    webbrowser.open(url, new=1, autoraise=True)
     verifier = raw_input('Then enter the PIN: ').strip()
     rdio.complete_authentication(verifier)
 
