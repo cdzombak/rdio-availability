@@ -14,7 +14,6 @@ def main():
 
     print('\nProcessing...')
 
-    # find out what playlists you created
     collectionAlbums = rdio.call('getAlbumsInCollection')['result']
     unstreamableAlbums = filter(lambda a: a['canStream'] == False, collectionAlbums)
     percentUnstreamable = int( round( (float(len(unstreamableAlbums)) / float(len(collectionAlbums))) * 100) )
